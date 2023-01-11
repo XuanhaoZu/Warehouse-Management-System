@@ -1,5 +1,4 @@
-# infs2605-20t3-MovingStringLatitude  
-infs2605-20t3-MovingStringLatitude  
+# Supermarket Warehouse Management System
 
 **Login Screen**  
    For login screen, there are 4 accounts you can login with. There 2 types of account: manager and employee  
