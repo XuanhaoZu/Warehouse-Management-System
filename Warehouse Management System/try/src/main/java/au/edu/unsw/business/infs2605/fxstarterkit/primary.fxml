@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="au.edu.unsw.business.infs2605.fxstarterkit.UserManagementController">
+   <children>
+      <Pane fx:id="pnSignUp" layoutY="4.0" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="-4.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="4.0">
+         <children>
+            <ImageView fitHeight="630.0" fitWidth="910.0" layoutX="-2.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@background.jpg" />
+               </image>
+            </ImageView>
+            <Pane layoutX="501.0" layoutY="186.0" prefHeight="359.0" prefWidth="318.0" style="-fx-background-color: #CBE6DF; -fx-background-radius: 10;">
+               <children>
+                  <TextField fx:id="txtUsername1" layoutX="112.0" layoutY="91.0" />
+                  <Label layoutX="39.0" layoutY="94.0" text="Username:">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="39.0" layoutY="146.0" text="Password:">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="39.0" layoutY="200.0" text="Full Name:">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtFullName" layoutX="112.0" layoutY="197.0" />
+                  <PasswordField fx:id="txtPassword1" layoutX="112.0" layoutY="143.0" />
+                  <Button fx:id="btnRegister" layoutX="123.0" layoutY="254.0" mnemonicParsing="false" onAction="#handleRegisterButton" style="-fx-background-color: #C7A9DB; -fx-background-radius: 5;" text="Register">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="117.0" layoutY="31.0" text="SIGN UP">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <Hyperlink fx:id="hyperLinkSignIn" layoutX="54.0" layoutY="301.0" onAction="#switchPane" text="Already have an account? Sign in">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                  </Hyperlink>
+               </children>
+            </Pane>
+            <Label fx:id="lblIncorrectDetails" layoutX="129.0" layoutY="200.0" prefHeight="15.0" prefWidth="141.0" />
+            <Label layoutX="490.0" layoutY="45.0" prefHeight="98.0" prefWidth="284.0" text="Manage Your Inventory easily and efficiently" textAlignment="CENTER" textFill="#52aa91" wrapText="true">
+               <font>
+                  <Font name="Arial Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="89.0" layoutY="95.0" text="What is IMA.?" textFill="#52aa91">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <Label layoutX="68.0" layoutY="126.0" prefHeight="85.0" prefWidth="200.0" text="Management and tracking tool Improve business processes " textAlignment="CENTER" textFill="#52aa91" wrapText="true">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="pnSignIn" prefHeight="600.0" prefWidth="900.0" AnchorPane.bottomAnchor="-8.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="630.0" fitWidth="910.0" layoutX="-2.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@background.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblIncorrectLogin" layoutX="501.0" layoutY="524.0" prefHeight="15.0" prefWidth="304.0" text="Incorrect username/password, please check again" textFill="RED" visible="false" />
+            <Label layoutX="490.0" layoutY="45.0" prefHeight="128.0" prefWidth="294.0" text="Manage Your Inventory easily and efficiently" textAlignment="CENTER" textFill="#52aa91" wrapText="true">
+               <font>
+                  <Font name="Arial Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="89.0" layoutY="95.0" text="What is IMA.?" textFill="#52aa91">
+               <font>
+                  <Font name="Arial" size="26.0" />
+               </font>
+            </Label>
+            <Label layoutX="68.0" layoutY="126.0" prefHeight="85.0" prefWidth="200.0" text="Management and tracking tool Improve business processes " textAlignment="CENTER" textFill="#52aa91" wrapText="true">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Pane layoutX="504.0" layoutY="157.0" prefHeight="310.0" prefWidth="284.0" style="-fx-background-color: #CBE6DF; -fx-background-radius: 10;">
+               <children>
+                  <TextField fx:id="txtUsername" layoutX="54.0" layoutY="94.0" promptText="Please enter username..." />
+                  <PasswordField fx:id="txtPassword" layoutX="54.0" layoutY="179.0" promptText="Please enter password..." />
+                  <Label layoutX="52.0" layoutY="63.0" text="Username:">
+                     <font>
+                        <Font name="Calibri" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="54.0" layoutY="149.0" text="Password:">
+                     <font>
+                        <Font name="Calibri" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="110.0" layoutY="26.0" text="SIGN IN">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnLogin" layoutX="96.0" layoutY="230.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="33.0" prefWidth="95.0" style="-fx-background-color: #C7A9DB; -fx-background-radius: 5;" text="Login" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Hyperlink fx:id="hyperLinkSignUp" layoutX="42.0" layoutY="273.0" onAction="#switchPane" text="Don't have an account? Sign up">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                  </Hyperlink>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

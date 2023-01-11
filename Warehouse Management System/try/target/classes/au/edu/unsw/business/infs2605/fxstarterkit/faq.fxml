@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="au.edu.unsw.business.infs2605.fxstarterkit.FAQController">
+   <children>
+      <AnchorPane prefHeight="50.0" prefWidth="700.0" style="-fx-background-color: #4169E1;">
+         <children>
+            <Hyperlink layoutX="396.0" layoutY="7.0" lineSpacing="20.0" onAction="#switchToSecondary" text="Data Management" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Hyperlink>
+            <Hyperlink fx:id="linkSettings" layoutX="556.0" layoutY="7.0" lineSpacing="20.0" onAction="#switchToSettings" text="Settings" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Hyperlink>
+            <Hyperlink fx:id="linkLogout" layoutX="632.0" layoutY="7.0" lineSpacing="20.0" onAction="#switchToPrimary" text="Logout" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Hyperlink>
+            <Label layoutX="14.0" layoutY="11.0" text="FAQ" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
